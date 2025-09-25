@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor Verdadeiro</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heart-container">
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+    </div>
+
+    <div class="container">
+        <h1>Para o meu amor...</h1>
+        <p>Cada momento ao seu lado é especial. Você é o meu verdadeiro amor.</p>
+        
+        <div class="photo-card">
+            <img src="1.jpeg" alt="Foto 1 do casal">
+        </div>
+        
+        <div class="photo-card rotated-card">
+            <img src="2.jpeg" alt="Foto 2 do casal">
+        </div>
+
+        <p class="love-message">
+            Juntos, a vida é mais bonita. Com todo o meu amor, para sempre.
+        </p>
+    </div>
+</body>
+<style> body {
+    background-color: #ffe6f2; 
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.container {
+    padding: 50px 20px;
+    position: relative;
+    z-index: 2; 
+}
+
+h1 {
+    font-size: 4em;
+    color: #d8457c; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+.photo-card {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-card:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.rotated-card {
+    transform: rotate(-5deg);
+}
+
+.rotated-card:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+.photo-card img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.love-message {
+    font-size: 2em;
+    color: #e91e63;
+    margin-top: 30px;
+}
+
+
+.heart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2em;
+    color: #e91e63;
+    animation: floatHeart 15s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+.heart:nth-child(1) { left: 10%; animation-delay: 1s; }
+.heart:nth-child(2) { left: 20%; animation-delay: 3s; }
+.heart:nth-child(3) { left: 30%; animation-delay: 5s; }
+.heart:nth-child(4) { left: 40%; animation-delay: 7s; }
+.heart:nth-child(5) { left: 50%; animation-delay: 9s; }
+.heart:nth-child(6) { left: 60%; animation-delay: 11s; }
+.heart:nth-child(7) { left: 70%; animation-delay: 13s; }
+.heart:nth-child(8) { left: 80%; animation-delay: 15s; }
+.heart:nth-child(9) { left: 90%; animation-delay: 17s; }
+.heart:nth-child(10) { left: 5%; animation-delay: 19s; }
+</style>
+</html>
